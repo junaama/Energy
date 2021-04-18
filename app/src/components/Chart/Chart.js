@@ -8,7 +8,7 @@ const Chart = () => {
         {name: "Program 4", highest: 115, lowest: 78, amt: 0}
     ]
 return (
-    <>
+    <div>
         <LineChart
           width={500}
           height={300}
@@ -28,7 +28,7 @@ return (
           <Line type="monotone" dataKey="lowest" stroke="#8884d8" activeDot={{ r: 8 }} />
           <Line type="monotone" dataKey="highest" stroke="#82ca9d" />
         </LineChart>
-    </>
+    </div>
 )
 }
 export default Chart;
